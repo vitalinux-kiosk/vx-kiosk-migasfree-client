@@ -1,3 +1,10 @@
+vx-kiosk-migasfree-client (1.0-3) unstable; urgency=low
+
+  * Do not remove keys
+  * Save tags to /var/tmp/migasfree/change-node.conf to remove package
+
+ -- Alberto Gacias <alberto@migasfree.org>  Mon, 20 Oct 2014 08:42:47 +0200
+
 vx-kiosk-migasfree-client (1.0-2) unstable; urgency=low
 
   * vx-divert-remove in prerm (close #1)

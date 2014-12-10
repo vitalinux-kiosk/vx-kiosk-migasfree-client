@@ -21,6 +21,10 @@ case "$1" in
     remove|upgrade|deconfigure)
         if [ "remove" = "$1" ]
         then
+            # Save tags for a posible node change
+            mkdir -p /var/tmp/migasfree || :
+            echo "$(migasfree-tags --get)" > /var/tmp/migasfree/change-node.conf || :
+
             vx-divert-remove vx-kiosk-migasfree-client
         fi
     ;;
